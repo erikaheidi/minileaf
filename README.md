@@ -1,6 +1,6 @@
 # Minileaf
 
-![Minileaf screenshot](https://imgur.com/mM7EINI)
+![Minileaf screenshot](https://i.imgur.com/mM7EINI.png)
 
 A CLI PHP application to control Nanoleaf panels, using the Nanoleaf OpenAPI.
 

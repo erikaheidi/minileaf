@@ -1,5 +1,7 @@
 # Minileaf
 
+![Minileaf screenshot](https://imgur.com/mM7EINI)
+
 A CLI PHP application to control Nanoleaf panels, using the Nanoleaf OpenAPI.
 
 You'll need to know the IP address of your Nanoleaf controller. 

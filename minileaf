@@ -1,0 +1,22 @@
+#!/usr/bin/php
+<?php
+use App\Service\NanoleafService;
+use App\Device;
+
+if (php_sapi_name() !== 'cli') {
+    exit;
+}
+
+require __DIR__ . '/vendor/autoload.php';
+
+use Minicli\App;
+
+$app = new App([
+    'app_path' => __DIR__ . '/app/Command',
+    'data_dir' => __DIR__ . '/.data',
+]);
+
+$nanoleaf = new NanoleafService();
+$app->addService('nanoleaf', $nanoleaf);
+$app->setSignature("Minileaf\nType './minileaf help' for help with commands");
+$app->runCommand($argv);
